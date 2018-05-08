@@ -1,0 +1,4 @@
+<?php
+
+define('SILVERSTRIPE_ELEMENTAL-PROMOS_PATH', __DIR__);
+define('SILVERSTRIPE_ELEMENTAL-PROMOS_DIR', basename(__DIR__));
