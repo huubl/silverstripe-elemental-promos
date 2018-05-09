@@ -1,16 +1,6 @@
-<div class="$ExtraClass">
-	<% if $ShowTitle %><h3>$Title</h3><% end_if %>
-	<% if $Content %>$Content<% end_if %>
- 	<% if $PromoList %>
-		<div class="row">
-			<% loop $PromoList %>
-                <div class="col-md-4">
-					<% if $Title %><div class='block_title'><h4>$Title</h4></div><% end_if %>
-					<% if $Image %><img src="$Image.URL" class="img-responsive" alt="$Title.ATT"><% end_if %>
-					<% if $Content %><div class='block_content'>$Content</div><% end_if %>
-					<% if $ElementLink %><p>$ElementLink</p><% end_if %>
-                </div>
-			<% end_loop %>
-		</div>
-	<% end_if %>
-</div>
+<% if $Title && $ShowTitle %><h2 class="element__title">$Title</h2><% end_if %>
+<% if $Content %><div class="element__content">$Content</div><% end_if %>
+
+<% if $PromoList %>
+    <% include PromosSimple %>
+<% end_if %>

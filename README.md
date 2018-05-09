@@ -22,27 +22,37 @@ A block to display a group of promo objects - a small card with an image, headli
 
 `composer require dynamic/silverstripe-elemental-promos`
 
-## Example usage
+## Usage
 
-A block to display a group of promo objects - a small card with an image, headline, short desciption, 
-and link. Display 3 to 4 promos per row depending on layout restrictions.
+A block to display a group of promo objects - a small card with an image, headline, short desciption, and link. Typically this will display 3 to 4 promos per row depending on layout restrictions. 
+
+### Template Notes
+
+The default templates are based off [Bootstrap 4](https://getbootstrap.com/) classes/styling
+
+A simple display of the promos is being used by default in the `PromosSimple.ss` include. Also in the includes folder is another version, `PromosCardDeck` that uses the [Bootstrap 4 Card Deck](http://getbootstrap.com/docs/4.1/components/card/#card-decks).
+
+## Screen Shots
+
+#### Front End sample of a Promos Element
+![Front End sample of a Promos Element](./readme-images/promos-block-sample.jpg)
+
+#### Alternate Front End sample of a Promos Element (uses Card Deck include)
+![Front End sample of a Promos Element](./readme-images/promos-block-sample-alternate.jpg)
+
+#### CMS - Promos Main Tab
+![CMS - Promos Block Main Tab](./readme-images/promos-block-cms.jpg)
+
+#### CMS - Promos Block - Promos List
+![CMS - Promos Block - Promos List](./readme-images/promos-block-cms-promos-list.jpg)
+
+#### CMS - Promos Block - Promo Edit
+![CMS - Promos Block - Promos Edit](./readme-images/promos-block-cms-promo-edit.jpg)
+
 
 ## Getting more elements
 
-Other elemental modules by Dynamic:
-
-* SilverStripe Elemental Blocks
-	* [Packagist](https://packagist.org/packages/dynamic/silverstripe-elemental-blocks)
-	* [GitHub](https://github.com/dynamic/silverstripe-elemental-blocks)
-* [SilverStripe Elemental Accordion](https://github.com/dynamic/silverstripe-elemental-accordion)  
-* [SilverStripe Elemental Blog](https://github.com/dynamic/silverstripe-elemental-blog)
-* [SilverStripe Elemental Countdown](https://github.com/dynamic/silverstripe-elemental-countdown)
-* [SilverStripe Elemental Customer Service](https://github.com/dynamic/silverstripe-elemental-customer-service)
-* [SilverStripe Elemental Flexslider](https://github.com/dynamic/silverstripe-elemental-flexslider)  
-* [SilverStripe Elemental Gallery](https://github.com/dynamic/silverstripe-elemental-gallery)
-* [Silverstripe Elemental oEmbed](https://github.com/dynamic/silverstripe-elemental-oembed)
-* [SilverStripe Elemental Sponsors](https://github.com/dynamic/silverstripe-elemental-sponsors)  
-* [SilverStripe Elemental Testimonials](https://github.com/dynamic/silverstripe-elemental-testimonials)  
+See [Elemental modules by Dynamic](https://github.com/dynamic/silverstripe-elemental-blocks#getting-more-elements)
 
 ## Configuration
 
