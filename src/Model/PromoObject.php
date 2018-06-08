@@ -62,20 +62,4 @@ class PromoObject extends BaseElementObject
 
         return parent::getCMSFields();
     }
-
-    /**
-     * @return null
-     */
-    public function getPage()
-    {
-        $page = null;
-
-        if ($this->ID && $this->ElementPromos()->count() > 0) {
-            if ($object = singleton(ElementPromos::class)->hasMethod('getPage')) {
-                $page = $this->ElementPromos()->first()->getPage();
-            }
-        }
-
-        return $page;
-    }
 }
