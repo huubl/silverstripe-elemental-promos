@@ -70,9 +70,9 @@ class PromoObject extends BaseElementObject
     {
         $page = null;
 
-        if ($this->ElementPromos()) {
-            if ($this->ElementPromos()->hasMethod('getPage')) {
-                $page = $this->PhotoGallery()->getPage();
+        if ($this->ID && $this->ElementPromos()->count() > 0) {
+            if ($object = singleton(ElementPromos::class)->hasMethod('getPage')) {
+                $page = $this->ElementPromos()->first()->getPage();
             }
         }
 
