@@ -9,7 +9,10 @@ use SilverStripe\Forms\GridField\GridField;
 use SilverStripe\Forms\GridField\GridFieldConfig_RecordViewer;
 
 /**
- * Class PromoObject.
+ * Class PromoObject
+ * @package Dynamic\Elements\Promos\Model
+ *
+ * @method \SilverStripe\ORM\ManyManyList ElementPromos()
  */
 class PromoObject extends BaseElementObject
 {
