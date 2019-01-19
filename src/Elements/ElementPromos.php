@@ -65,6 +65,15 @@ class ElementPromos extends BaseElement
     );
 
     /**
+     * Set to false to prevent an in-line edit form from showing in an elemental area. Instead the element will be
+     * clickable and a GridFieldDetailForm will be used.
+     *
+     * @config
+     * @var bool
+     */
+    private static $inline_editable = false;
+
+    /**
      * @return FieldList
      */
     public function getCMSFields()
@@ -101,9 +110,24 @@ class ElementPromos extends BaseElement
     /**
      * @return DBHTMLText
      */
-    public function ElementSummary()
+    public function getSummary()
     {
-        return DBField::create_field('HTMLText', $this->Content)->Summary(20);
+        if ($this->Promos()->count() == 1) {
+            $label = ' promo';
+        } else {
+            $label = ' promos';
+        }
+        return DBField::create_field('HTMLText', $this->Promos()->count() . $label)->Summary(20);
+    }
+
+    /**
+     * @return array
+     */
+    protected function provideBlockSchema()
+    {
+        $blockSchema = parent::provideBlockSchema();
+        $blockSchema['content'] = $this->getSummary();
+        return $blockSchema;
     }
 
     /**

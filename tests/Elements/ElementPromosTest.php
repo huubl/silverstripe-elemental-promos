@@ -41,10 +41,10 @@ class ElementPromosTest extends SapphireTest
     /**
      *
      */
-    public function testGetElementSummary()
+    public function testGetSummary()
     {
         $object = $this->objFromFixture(ElementPromos::class, 'one');
-        $this->assertEquals($object->ElementSummary(), $object->dbObject('Content')->Summary(20));
+        $this->assertEquals($object->getSummary(), '2 promos');
     }
 
     /**
