@@ -8,6 +8,7 @@ use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\GridField\GridFieldAddExistingAutocompleter;
 use SilverStripe\ORM\FieldType\DBField;
 use SilverStripe\ORM\FieldType\DBHTMLText;
+use SilverStripe\Versioned\GridFieldArchiveAction;
 use Symbiote\GridFieldExtensions\GridFieldAddExistingSearchButton;
 use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
 
@@ -80,16 +81,21 @@ class ElementPromos extends BaseElement
     {
         $this->beforeUpdateCMSFields(function (FieldList $fields) {
             $fields->dataFieldByName('Content')
-                ->setRows(8)
-            ;
+                ->setRows(8);
 
             if ($this->ID) {
+                /** @var \SilverStripe\Forms\GridField\GridField $promoField */
                 $promoField = $fields->dataFieldByName('Promos');
                 $config = $promoField->getConfig();
-                $config->addComponent(new GridFieldOrderableRows('SortOrder'));
-                $config->removeComponentsByType(GridFieldAddExistingAutocompleter::class);
-                $config->addComponent(new GridFieldAddExistingSearchButton());
-                $config->removeComponentsByType(GridFieldDeleteAction::class);
+                $config->removeComponentsByType([
+                    GridFieldAddExistingAutocompleter::class,
+                    GridFieldDeleteAction::class,
+                    GridFieldArchiveAction::class,
+                ])->addComponents(
+                    new GridFieldOrderableRows('SortOrder'),
+                    new GridFieldAddExistingSearchButton()
+                );
+
                 $fields->addFieldsToTab('Root.Promos', array(
                     $promoField,
                 ));
