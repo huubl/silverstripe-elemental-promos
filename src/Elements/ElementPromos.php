@@ -13,7 +13,12 @@ use Symbiote\GridFieldExtensions\GridFieldAddExistingSearchButton;
 use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
 
 /**
- * Class PromosElement.
+ * Class ElementPromos
+ * @package Dynamic\Elements\Promos\Elements
+ *
+ * @property string $Content
+ *
+ * @method \SilverStripe\ORM\ManyManyList Promos()
  */
 class ElementPromos extends BaseElement
 {
