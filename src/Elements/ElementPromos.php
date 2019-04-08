@@ -86,11 +86,13 @@ class ElementPromos extends BaseElement
     {
         $this->beforeUpdateCMSFields(function (FieldList $fields) {
             $fields->dataFieldByName('Content')
-                ->setRows(8);
+                ->setTitle('Description')
+                ->setRows(5);
 
             if ($this->ID) {
                 /** @var \SilverStripe\Forms\GridField\GridField $promoField */
                 $promoField = $fields->dataFieldByName('Promos');
+                $fields->removeByName('Promos');
                 $config = $promoField->getConfig();
                 $config->removeComponentsByType([
                     GridFieldAddExistingAutocompleter::class,
@@ -101,7 +103,7 @@ class ElementPromos extends BaseElement
                     new GridFieldAddExistingSearchButton()
                 );
 
-                $fields->addFieldsToTab('Root.Promos', array(
+                $fields->addFieldsToTab('Root.Main', array(
                     $promoField,
                 ));
             }
