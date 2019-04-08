@@ -1,6 +1,6 @@
 # Silverstripe Elemental Promos
 
-A block to display a group of promo objects - a small card with an image, headline, short desciption, and link.
+A block to display a group of promos - a small card with an image, headline, short desciption, and link.
 
 [![Build Status](https://travis-ci.org/dynamic/silverstripe-elemental-promos.svg?branch=master)](https://travis-ci.org/dynamic/silverstripe-elemental-promos)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-promos/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-promos/?branch=master)
@@ -15,8 +15,7 @@ A block to display a group of promo objects - a small card with an image, headli
 
 ## Requirements
 
-* silverstripe/recipe-cms: ^4@dev
-* dnadesign/silverstripe-elemental: ^4@dev
+* dnadesign/silverstripe-elemental: ^4.0
 
 ## Installation
 
@@ -24,7 +23,7 @@ A block to display a group of promo objects - a small card with an image, headli
 
 ## Usage
 
-A block to display a group of promo objects - a small card with an image, headline, short desciption, and link. Typically this will display 3 to 4 promos per row depending on layout restrictions. 
+A content block to display a group of promos - a small card with an image, headline, short desciption, and link. Typically this will display 3 to 4 promos per row depending on layout restrictions. 
 
 ### Template Notes
 
@@ -35,19 +34,19 @@ A simple display of the promos is being used by default in the `PromosSimple.ss`
 ## Screen Shots
 
 #### Front End sample of a Promos Element
-![Front End sample of a Promos Element](./readme-images/promos-block-sample.jpg)
+![Front End sample of a Promos Element](./images/promos-block-sample.jpg)
 
 #### Alternate Front End sample of a Promos Element (uses Card Deck include)
-![Front End sample of a Promos Element](./readme-images/promos-block-sample-alternate.jpg)
+![Front End sample of a Promos Element](./images/promos-block-sample-alternate.jpg)
 
 #### CMS - Promos Main Tab
-![CMS - Promos Block Main Tab](./readme-images/promos-block-cms.jpg)
+![CMS - Promos Block Main Tab](./images/promos-block-cms.jpg)
 
 #### CMS - Promos Block - Promos List
-![CMS - Promos Block - Promos List](./readme-images/promos-block-cms-promos-list.jpg)
+![CMS - Promos Block - Promos List](./images/promos-block-cms-promos-list.jpg)
 
 #### CMS - Promos Block - Promo Edit
-![CMS - Promos Block - Promos Edit](./readme-images/promos-block-cms-promo-edit.jpg)
+![CMS - Promos Block - Promos Edit](./images/promos-block-cms-promo-edit.jpg)
 
 
 ## Getting more elements
