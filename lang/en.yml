@@ -1,0 +1,16 @@
+en:
+  Dynamic\Elements\Promos\Admin\PromosAdmin:
+    MENUTITLE: Promos
+  Dynamic\Elements\Promos\Elements\ElementPromos:
+    BlockType: Promos
+    PLURALNAME: 'Promos Elements'
+    PLURALS:
+      one: 'A Promos Element'
+      other: '{count} Promos Elements'
+    SINGULARNAME: 'Promos Element'
+  Dynamic\Elements\Promos\Model\PromoObject:
+    PLURALNAME: Promos
+    PLURALS:
+      one: 'A Promo'
+      other: '{count} Promos'
+    SINGULARNAME: Promo
