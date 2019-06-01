@@ -87,13 +87,26 @@ class ElementPromos extends BaseElement
     private static $inline_editable = false;
 
     /**
+     * @param bool $includerelations
+     * @return array
+     */
+    public function fieldLabels($includerelations = true)
+    {
+        $labels = parent::fieldLabels($includerelations);
+
+        $labels['Content'] = _t(__CLASS__.'.ContentLabel', 'Intro');
+        $labels['Promos'] = _t(__CLASS__ . '.PromosLabel', 'Promos');
+
+        return $labels;
+    }
+
+    /**
      * @return FieldList
      */
     public function getCMSFields()
     {
         $this->beforeUpdateCMSFields(function (FieldList $fields) {
             $fields->dataFieldByName('Content')
-                ->setTitle('Description')
                 ->setRows(5);
 
             if ($this->ID) {

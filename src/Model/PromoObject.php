@@ -39,6 +39,13 @@ class PromoObject extends BaseElementObject
     private static $table_name = 'PromoObject';
 
     /**
+     * @var array
+     */
+    private static $summary_fields = [
+        'Summary',
+    ];
+
+    /**
      * @return FieldList
      *
      * @throws \Exception
@@ -64,5 +71,13 @@ class PromoObject extends BaseElementObject
         });
 
         return parent::getCMSFields();
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSummary()
+    {
+        return $this->dbObject('Content')->Summary(20);
     }
 }

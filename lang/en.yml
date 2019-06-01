@@ -3,10 +3,12 @@ en:
     MENUTITLE: Promos
   Dynamic\Elements\Promos\Elements\ElementPromos:
     BlockType: Promos
+    ContentLabel: 'Intro'
     PLURALNAME: 'Promos Elements'
     PLURALS:
       one: 'A Promos Element'
       other: '{count} Promos Elements'
+    PromosLabel: 'Promos'
     SINGULARNAME: 'Promos Element'
   Dynamic\Elements\Promos\Model\PromoObject:
     PLURALNAME: Promos
