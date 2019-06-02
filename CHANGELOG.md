@@ -1,6 +1,27 @@
 # Change Log
 
-## [2.0.2](https://github.com/dynamic/silverstripe-elemental-promos/tree/2.0.2) (2019-03-20)
+## [2.0.3](https://github.com/dynamic/silverstripe-elemental-promos/tree/2.0.3) (2019-06-01)
+[Full Changelog](https://github.com/dynamic/silverstripe-elemental-promos/compare/2.0.2...2.0.3)
+
+**Implemented enhancements:**
+
+- Implement FieldLabels for i18n [\#23](https://github.com/dynamic/silverstripe-elemental-promos/issues/23)
+- ElementPromos should own Promos [\#22](https://github.com/dynamic/silverstripe-elemental-promos/issues/22)
+
+**Merged pull requests:**
+
+- update documentation, guidelines [\#26](https://github.com/dynamic/silverstripe-elemental-promos/pull/26) ([jsirish](https://github.com/jsirish))
+- transifex config [\#25](https://github.com/dynamic/silverstripe-elemental-promos/pull/25) ([jsirish](https://github.com/jsirish))
+- CI adjustments [\#24](https://github.com/dynamic/silverstripe-elemental-promos/pull/24) ([jsirish](https://github.com/jsirish))
+- ElementPromos owns Promos [\#21](https://github.com/dynamic/silverstripe-elemental-promos/pull/21) ([jsirish](https://github.com/jsirish))
+- i18n adjustments [\#20](https://github.com/dynamic/silverstripe-elemental-promos/pull/20) ([jsirish](https://github.com/jsirish))
+- Update PromosCardDeck.ss with $ShowTitle [\#19](https://github.com/dynamic/silverstripe-elemental-promos/pull/19) ([AntonyThorpe](https://github.com/AntonyThorpe))
+- Update PromosSimple.ss with $ShowTitle [\#18](https://github.com/dynamic/silverstripe-elemental-promos/pull/18) ([AntonyThorpe](https://github.com/AntonyThorpe))
+- initial i18n work [\#17](https://github.com/dynamic/silverstripe-elemental-promos/pull/17) ([jsirish](https://github.com/jsirish))
+- documentation cleanup [\#15](https://github.com/dynamic/silverstripe-elemental-promos/pull/15) ([jsirish](https://github.com/jsirish))
+- cms design [\#14](https://github.com/dynamic/silverstripe-elemental-promos/pull/14) ([jsirish](https://github.com/jsirish))
+
+## [2.0.2](https://github.com/dynamic/silverstripe-elemental-promos/tree/2.0.2) (2019-03-21)
 [Full Changelog](https://github.com/dynamic/silverstripe-elemental-promos/compare/2.0.1...2.0.2)
 
 **Closed issues:**
